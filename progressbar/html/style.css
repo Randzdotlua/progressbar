@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+
+:root {
+    --primary-color: #ff7b00; /* Color Theme */
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    background: transparent !important;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.progress-container {
+    display: none;
+    z-index: 5;
+    color: #fff;
+    width: 400px;
+    position: fixed;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Oswald;
+    font-weight: 700;
+    
+    font-style: normal;
+}
+
+.progress-labels {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#progress-label {
+    font-size: 1.3vh;
+    line-height: 4vh;
+    position: relative;
+    color: #ffffff;
+    text-shadow: 
+  0 0 5px #b3b3b3,   /* soft inner glow */
+  0 0 10px #b3b3b3,  /* medium outer glow */
+  0 0 20px #b3b3b3;  /* larger outer glow */
+    z-index: 10;
+    font-weight: bold;
+}
+
+#progress-percentage {
+    font-size: 1.3vh;
+    line-height: 4vh;
+    position: relative;
+    color: var(--primary-color);
+    text-shadow: 
+  0 0 5px var(--primary-color),   /* soft inner glow */
+  0 0 10px var(--primary-color),  /* medium outer glow */
+  0 0 20px var(--primary-color);  /* larger outer glow */
+    z-index: 10;
+   
+}
+
+.progress-bar-container {
+    background: rgba(157, 156, 156, 0.716);
+    height: 8px;
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.227) 0px,
+        rgba(255, 255, 255, 0.324) 4px,
+        transparent 4px,
+        transparent 8px
+      );
+    background-size: 10px 10px; /* ADD THIS */
+    position: relative;
+    display: block;
+    border-radius: 4px;
+}
+
+#progress-bar {
+    background-color: var(--primary-color); /* ADD THIS */
+    opacity: 0.9;
+    width: 0%;
+    height: 8px;
+    border-radius: 4px;
+    box-shadow: 
+  0 0 5px var(--primary-color),   /* soft inner glow */
+  0 0 10px var(--primary-color),  /* medium outer glow */
+  0 0 20px var(--primary-color);  /* larger outer glow */
+}
