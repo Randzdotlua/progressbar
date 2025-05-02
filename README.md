@@ -1,6 +1,8 @@
 # progressbar
 prodigy rp inspired progressbar
 
+this is also just a edited version of the original QBCore Progressbar.
+
 it should be a drag and drop and should work out the box.
 
 its not exactly like prodigy rp's progressbar its just inspired by it..
